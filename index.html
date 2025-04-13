@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about incense production, types, and history">
+    <title>The Art of Incense - Educational Resource</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts/animations.js" defer></script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper">
+            <header>
+                <nav class="main-nav">
+                    <div class="nav-container">
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="nav-link active">Home</a></li>
+                            <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                            <li><a href="production.html" class="nav-link">Production Process</a></li>
+                            <li><a href="types.html" class="nav-link">Types of Incense</a></li>
+                            <li><a href="materials.html" class="nav-link">Raw Materials</a></li>
+                            <li><a href="products.html" class="nav-link">Products</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <section id="home" class="hero">
+                    <div class="peace-icon top-right">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,5.8C8.5,5.8 5.8,8.5 5.8,12C5.8,15.5 8.5,18.2 12,18.2C15.5,18.2 18.2,15.5 18.2,12C18.2,8.5 15.5,5.8 12,5.8M12,7.9C14.3,7.9 16.1,9.7 16.1,12C16.1,14.3 14.3,16.1 12,16.1C9.7,16.1 7.9,14.3 7.9,12C7.9,9.7 9.7,7.9 12,7.9Z" />
+                        </svg>
+                    </div>
+                    <div class="nature-element leaf floating" style="top: 10%; left: 5%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="nature-element leaf floating-delayed" style="top: 15%; right: 10%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="nature-element leaf rotating" style="bottom: 20%; left: 15%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="transform: scaleX(-1);">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="hero-content opacity-0">
+                        <h1>The Art of Incense Making</h1>
+                        <p class="hero-subtitle">Discover the ancient craft of incense production and its cultural
+                            significance</p>
+                        <p class="hero-text">For thousands of years, the art of creating incense has been practiced
+                            across cultures, combining aromatic natural ingredients to produce fragrant smoke that
+                            enriches spiritual practices, meditation, and daily life.</p>
+                    </div>
+                    <div class="hero-media opacity-0">
+                        <div class="placeholder-media">
+                            <video autoplay muted loop playsinline>
+                                <source src="./assets/videos/hero-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="featured-links">
+                    <div class="peace-icon bottom-left">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12,2L1,21H23M12,6L19.5,19H4.5" />
+                        </svg>
+                    </div>
+                    <div class="nature-element leaf floating" style="top: -5%; right: 20%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="cards-grid">
+                        <a href="production.html" class="feature-card">
+                            <div class="card-icon">🏭</div>
+                            <h3>The Production Process</h3>
+                            <p>Learn the step-by-step creation of incense</p>
+                        </a>
+                        <a href="types.html" class="feature-card">
+                            <div class="card-icon">🕯️</div>
+                            <h3>Types of Incense</h3>
+                            <p>Explore different forms and varieties</p>
+                        </a>
+                        <a href="materials.html" class="feature-card">
+                            <div class="card-icon">🌿</div>
+                            <h3>Raw Materials</h3>
+                            <p>Discover the essential ingredients</p>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="production">
+                    <div class="peace-icon top-left">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6.5A5.5,5.5 0 0,0 6.5,12A5.5,5.5 0 0,0 12,17.5A5.5,5.5 0 0,0 17.5,12A5.5,5.5 0 0,0 12,6.5M12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5" />
+                        </svg>
+                    </div>
+                    <div class="peace-icon bottom-right">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6.5A5.5,5.5 0 0,0 6.5,12A5.5,5.5 0 0,0 12,17.5A5.5,5.5 0 0,0 17.5,12A5.5,5.5 0 0,0 12,6.5M12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5" />
+                        </svg>
+                    </div>
+                    <div class="peace-icon center-float">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6.5A5.5,5.5 0 0,0 6.5,12A5.5,5.5 0 0,0 12,17.5A5.5,5.5 0 0,0 17.5,12A5.5,5.5 0 0,0 12,6.5" />
+                        </svg>
+                    </div>
+                    <div class="container">
+                        <h2 class="section-title">Production Process</h2>
+                        <div class="process-container">
+                            <article class="process-step">
+                                <h3>Raw Materials</h3>
+                                <p>Premium natural ingredients sourced globally, carefully selected for authenticity and
+                                    quality in traditional incense making.</p>
+                            </article>
+                            <article class="process-step">
+                                <h3>Crafting Methods</h3>
+                                <p>Time-honored techniques combined with modern precision to create perfectly balanced
+                                    incense products.</p>
+                            </article>
+                            <article class="process-step">
+                                <h3>Quality Control</h3>
+                                <p>Rigorous testing and refinement ensure each product meets our exacting standards for
+                                    fragrance and burning characteristics.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="types">
+                    <h2 class="section-title">Types of Incense</h2>
+                    <div class="types-grid-home">
+                        <article class="type-preview">
+                            <a href="types.html#japanese-stick" class="type-link">
+                                <div class="type-preview-image">
+                                    <div class="img-placeholder">
+                                        <img src="./assets/home/incense-sticks.jpg" alt="Stick Incense">
+                                    </div>
+                                </div>
+                                <div class="type-preview-content">
+                                    <h3>Stick Incense</h3>
+                                    <p>Traditional stick-based varieties, perfect for daily rituals and meditation</p>
+                                    <span class="learn-more">Explore More →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="type-preview">
+                            <a href="types.html#indian-cone" class="type-link">
+                                <div class="type-preview-image">
+                                    <div class="img-placeholder">
+                                        <img src="./assets/home/cone incense.jpg" alt="Cone Incense">
+                                    </div>
+                                </div>
+                                <div class="type-preview-content">
+                                    <h3>Cone Incense</h3>
+                                    <p>Concentrated form offering intense and long-lasting fragrances</p>
+                                    <span class="learn-more">Explore More →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="type-preview">
+                            <a href="types.html#frankincense-resin" class="type-link">
+                                <div class="type-preview-image">
+                                    <div class="img-placeholder">
+                                        <img src="./assets/home/resine incense.jpg" alt="Resin Incense">
+                                    </div>
+                                </div>
+                                <div class="type-preview-content">
+                                    <h3>Resin Incense</h3>
+                                    <p>Pure natural resins for authentic traditional experiences</p>
+                                    <span class="learn-more">Explore More →</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="history" class="history-section">
+                    <div class="history-bg"></div>
+                    <div class="container">
+                        <h2 class="section-title">Historical Background</h2>
+                        <div class="history-grid">
+                            <div class="history-card">
+                                <span class="culture-icon">🏛️</span>
+                                <h3>Ancient Origins</h3>
+                                <p>Dating back over 6,000 years, incense has been an integral part of human
+                                    civilization, from ancient Egypt to the Silk Road trade routes.</p>
+                            </div>
+                            <div class="history-card">
+                                <span class="culture-icon">⛩️</span>
+                                <h3>Spiritual Significance</h3>
+                                <p>Throughout history, incense has played a central role in religious ceremonies,
+                                    meditation practices, and spiritual rituals across cultures.</p>
+                            </div>
+                            <div class="history-card">
+                                <span class="culture-icon">🌿</span>
+                                <h3>Traditional Medicine</h3>
+                                <p>Many cultures have used incense for its therapeutic properties, incorporating it into
+                                    traditional healing practices and aromatherapy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="benefits" class="benefits-section">
+                    <div class="nature-element leaf floating-delayed" style="top: 10%; left: 10%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="container">
+                        <h2 class="section-title">Benefits & Uses</h2>
+                        <div class="benefits-wrapper">
+                            <div class="benefits-content">
+                                <div class="benefit-item">
+                                    <h3>Meditation & Mindfulness</h3>
+                                    <p>Create a calming atmosphere that enhances focus and promotes deeper meditation
+                                        practices.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h3>Air Purification</h3>
+                                    <p>Traditional uses include natural air cleansing and creating fresh, aromatic
+                                        environments.</p>
+                                </div>
+                                <div class="benefit-item">
+                                    <h3>Stress Relief</h3>
+                                    <p>Certain incense fragrances are known to help reduce stress and promote
+                                        relaxation.</p>
+                                </div>
+                            </div>
+                            <div class="benefits-image">
+                                <div class="img-placeholder">
+                                    <img src="./assets/home/benefit&uses.jpg" alt="Benefits of Incense">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="culture" class="culture-section">
+                    <div class="nature-element leaf rotating" style="bottom: 15%; right: 5%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="transform: scaleX(-1);">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="nature-element leaf floating" style="top: 20%; left: 8%;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z" />
+                        </svg>
+                    </div>
+                    <div class="container">
+                        <h2 class="section-title">Cultural Significance</h2>
+                        <div class="culture-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">3000 BCE</span>
+                                    <h3>Ancient Egypt</h3>
+                                    <p>Used in religious ceremonies and embalming practices. Egyptians developed
+                                        sophisticated incense formulas for temple offerings and ritual purification.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">600-900 CE</span>
+                                    <h3>Chinese Tradition</h3>
+                                    <p>Developed intricate incense ceremonies during the Tang Dynasty (618-907 CE).
+                                        Introduced coil and stick incense forms that spread throughout Asia.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">1336-1573 CE</span>
+                                    <h3>Japanese Kōdō</h3>
+                                    <p>The refined art of incense appreciation, established in the Muromachi period.
+                                        Elevated incense burning to a sophisticated cultural practice.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">1500 BCE</span>
+                                    <h3>Indian Heritage</h3>
+                                    <p>Ancient Vedic traditions incorporate incense in daily rituals and meditation.
+                                        Ayurvedic principles guide the selection of aromatics for wellness.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">100-1500 CE</span>
+                                    <h3>Middle Eastern Legacy</h3>
+                                    <p>Rich tradition of oud and bakhoor burning. Development of unique incense
+                                        traditions along the historic Silk Road trade routes.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <span class="timeline-date">1900-Present</span>
+                                    <h3>Modern Practice</h3>
+                                    <p>Contemporary use in meditation, aromatherapy, and mindfulness practices. Fusion
+                                        of traditional methods with modern wellness approaches.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="featured-products" class="featured-products-section">
+                    <div class="container">
+                        <h2 class="section-title">Featured Collections</h2>
+                        <div class="featured-products-grid">
+                            <article class="product-card">
+                                <div class="product-image">
+                                    <div class="img-placeholder">
+                                        <img src="./assets/home/premium stick.jpg" alt="">
+                                    </div>
+                                    <span class="product-badge">Traditional</span>
+                                </div>
+                                <div class="product-content">
+                                    <h3>Premium Sandalwood Sticks</h3>
+                                    <p class="product-description">Traditional Japanese sandalwood incense, perfect for
+                                        meditation</p>
+                                    <div class="product-meta">
+                                        <span class="product-type">Ceremonial Grade</span>
+                                    </div>
+                                    <a href="types.html" class="learn-more">Learn More →</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="section-footer">
+                            <a href="types.html" class="view-all-btn">Explore All Types →</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-content">
+                    <nav class="footer-nav">
+                        <div class="footer-links">
+                            <a href="index.html">Home</a>
+                            <a href="aboutus.html">About Us</a>
+                            <a href="production.html">Production Process</a>
+                            <a href="types.html">Types of Incense</a>
+                            <a href="materials.html">Raw Materials</a>
+                            <a href="products.html">Products</a>
+                        </div>
+                    </nav>
+                    <div class="footer-info">
+                        <p>© 2025 The Art of Incense. Educational resource about incense production and history.</p>
+                        <p>All rights reserved. Created with respect for traditional incense-making practices.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts/pageAnimations.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed guide to incense production process and manufacturing steps">
+    <title>The Production Process - The Art of Incense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <header>
+            <nav class="main-nav">
+                <div class="nav-container">
+<ul class="nav-list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+    <li><a href="production.html" class="nav-link active">Production Process</a></li>
+                        <li><a href="types.html" class="nav-link">Types of Incense</a></li>
+                        <li><a href="materials.html" class="nav-link">Raw Materials</a></li>
+                        <li><a href="products.html" class="nav-link">Products</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero production-hero">
+                <div class="peace-icon top-right">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,5.8C8.5,5.8 5.8,8.5 5.8,12C5.8,15.5 8.5,18.2 12,18.2C15.5,18.2 18.2,15.5 18.2,12C18.2,8.5 15.5,5.8 12,5.8Z"/>
+                    </svg>
+                </div>
+                <div class="nature-element leaf floating" style="top: 10%; left: 5%;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                    </svg>
+                </div>
+                <div class="hero-content">
+                    <h1>The Production Process</h1>
+                    <p class="hero-subtitle">A Step-by-Step Guide to Creating Incense</p>
+                    <div class="stage-previews">
+                        <div class="preview-card" data-stage="stage1">
+                            <div class="preview-icon">🌿</div>
+                            <h3>Raw Materials</h3>
+                            <p>Selection and preparation of ingredients</p>
+                        </div>
+                        <div class="preview-card" data-stage="stage2">
+                            <div class="preview-icon">⚗️</div>
+                            <h3>Preparation</h3>
+                            <p>Processing and blending components</p>
+                        </div>
+                        <div class="preview-card" data-stage="stage3">
+                            <div class="preview-icon">🔨</div>
+                            <h3>Making</h3>
+                            <p>Forming and shaping the incense</p>
+                        </div>
+                        <div class="preview-card" data-stage="stage4">
+                            <div class="preview-icon">✓</div>
+                            <h3>Quality Check</h3>
+                            <p>Testing and quality assurance</p>
+                        </div>
+                    </div>
+                    <div class="process-nav" role="navigation" aria-label="Production stages">
+                        <button class="process-nav-btn" data-stage="stage1" data-tooltip="View Raw Materials Stage">
+                            <span class="stage-number">1</span>
+                            <span class="stage-name">Raw Materials</span>
+                        </button>
+                        <button class="process-nav-btn" data-stage="stage2" data-tooltip="View Preparation Stage">
+                            <span class="stage-number">2</span>
+                            <span class="stage-name">Preparation</span>
+                        </button>
+                        <button class="process-nav-btn" data-stage="stage3" data-tooltip="View Making Stage">
+                            <span class="stage-number">3</span>
+                            <span class="stage-name">Making</span>
+                        </button>
+                        <button class="process-nav-btn" data-stage="stage4" data-tooltip="View Quality Check Stage">
+                            <span class="stage-number">4</span>
+                            <span class="stage-name">Quality Check</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="production-stages" class="enhanced-stages">
+                <div class="stages-sidebar">
+                    <div class="current-stage">
+                        <span class="stage-indicator">Current Stage:</span>
+                        <h3 class="stage-title">Raw Materials</h3>
+                    </div>
+                    <div class="stage-navigation">
+                        <button class="nav-prev" disabled>Previous Stage</button>
+                        <button class="nav-next">Next Stage</button>
+                    </div>
+                </div>
+                <div class="nature-element leaf rotating" style="bottom: 20%; right: 15%;">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                    </svg>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-indicator"></div>
+                </div>
+                <div class="stage-container">
+                    <article id="stage1" class="production-stage">
+                        <h2>1. Sourcing Raw Materials</h2>
+                        <div class="stage-content">
+                            <p>The journey begins with careful selection of high-quality natural ingredients:</p>
+                            
+                            <div class="materials-grid">
+                                <div class="material-category">
+                                    <div class="material-image">
+                                        <!-- Placeholder for woods image -->
+                                        <div class="img-placeholder">
+                                            <img src="./assets/production/aromatic wood.jpg" alt="aromatic woods">
+                                        </div>
+                                    </div>
+                                    <h3>Aromatic Woods</h3>
+                                    <p>Sacred woods like Sandalwood, Agarwood, and Cedar form the foundation of many incense varieties. These precious materials are carefully sourced from sustainable suppliers.</p>
+                                </div>
+
+                                <div class="material-category">
+                                    <div class="material-image">
+                                        <!-- Placeholder for resins image -->
+                                        <div class="img-placeholder">
+                                            <img src="./assets/production/natural rsine.jpg" alt="Natural resins">
+                                        </div>
+                                    </div>
+                                    <h3>Natural Resins</h3>
+                                    <p>Frankincense, Myrrh, and Copal resins provide rich, deep fragrances. These tree-derived substances have been prized in spiritual practices for millennia.</p>
+                                </div>
+
+                                <div class="material-category">
+                                    <div class="material-image">
+                                        <!-- Placeholder for herbs image -->
+                                        <div class="img-placeholder">
+                                            <img src="./assets/production/herbs.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3>Herbs and Spices</h3>
+                                    <p>Aromatic herbs, roots, and spices add complexity to the fragrance profile. Each ingredient is selected for both its scent and traditional significance.</p>
+                                </div>
+
+                                <div class="material-category">
+                                    <div class="material-image">
+                                        <!-- Placeholder for binders image -->
+                                        <div class="img-placeholder">
+                                            <img src="./assets/production/Natural Binders.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <h3>Natural Binders</h3>
+                                    <p>Traditional binding materials like Makko powder ensure proper burning characteristics while remaining natural and pure.</p>
+                                </div>
+                            </div>
+
+                            <div class="material-notes">
+                                <p>Each ingredient is carefully sourced with attention to:</p>
+                                <ul>
+                                    <li>Sustainability and ethical harvesting practices</li>
+                                    <li>Quality and purity standards</li>
+                                    <li>Traditional sourcing relationships</li>
+                                    <li>Environmental impact considerations</li>
+                                </ul>
+                            </div>
+
+                            <div class="stage-video-section">
+                                <h3>Watch the Process</h3>
+                                <div class="stage-video-container">
+                                    <video controls poster="assets/videos/materials-thumb.jpg">
+                                        <source src="assets/videos/raw-materials.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="video-caption">Detailed look at raw material selection and quality assessment</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="stage2" class="production-stage">
+                        <h2>2. Preparing the Materials</h2>
+                        <div class="stage-content">
+                            <p class="stage-intro">The preparation of raw materials is a crucial step that ensures consistent quality and proper burning characteristics:</p>
+                            
+                            <div class="preparation-steps">
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="img-placeholder">Grinding Process</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Grinding</h3>
+                                        <p>Woods, resins, and herbs are ground to specific particle sizes:</p>
+                                        <ul>
+                                            <li>Coarse grinding for initial size reduction</li>
+                                            <li>Fine grinding for uniform consistency</li>
+                                            <li>Temperature-controlled process to preserve aromatic compounds</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="img-placeholder">Sifting Demo</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Sifting and Sorting</h3>
+                                        <p>Materials are carefully sorted and graded:</p>
+                                        <ul>
+                                            <li>Multiple sieve stages for precise particle sizing</li>
+                                            <li>Removal of impurities and foreign matter</li>
+                                            <li>Quality grading of materials</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="video-placeholder">Weighing Process Video</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Measuring and Weighing</h3>
+                                        <p>Precise measurements ensure consistent quality:</p>
+                                        <ul>
+                                            <li>Digital scale measurements for accuracy</li>
+                                            <li>Proportion calibration for different recipes</li>
+                                            <li>Documentation of batch quantities</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quality-note">
+                                <h4>Quality Control Checks</h4>
+                                <p>During preparation, materials undergo several quality checks:</p>
+                                <ul>
+                                    <li>Moisture content verification</li>
+                                    <li>Particle size distribution analysis</li>
+                                    <li>Aromatic potency assessment</li>
+                                    <li>Visual inspection for consistency</li>
+                                </ul>
+                            </div>
+
+                            <div class="stage-video-section">
+                                <h3>Preparation Techniques</h3>
+                                <div class="stage-video-container">
+                                    <video controls poster="assets/videos/preparation-thumb.jpg">
+                                        <source src="assets/videos/preparation.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="video-caption">Step-by-step demonstration of material preparation methods</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="stage3" class="production-stage">
+                        <h2>3. Making the Paste</h2>
+                        <div class="stage-content">
+                            <p class="stage-intro">Creating the perfect incense paste requires precise mixing and careful attention to consistency:</p>
+                            
+                            <div class="preparation-steps">
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="video-placeholder">Mixing Process Video</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Initial Mixing</h3>
+                                        <p>Combining dry ingredients with careful precision:</p>
+                                        <ul>
+                                            <li>Sequential addition of materials</li>
+                                            <li>Thorough blending techniques</li>
+                                            <li>Temperature monitoring during mixing</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="img-placeholder">Binding Process</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Adding Binders</h3>
+                                        <p>Incorporating natural binding agents:</p>
+                                        <ul>
+                                            <li>Precise water addition</li>
+                                            <li>Natural adhesive integration</li>
+                                            <li>Consistency adjustment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quality-note">
+                                <h4>Texture Assessment</h4>
+                                <p>The paste must meet specific criteria:</p>
+                                <ul>
+                                    <li>Proper moisture content</li>
+                                    <li>Uniform consistency</li>
+                                    <li>Appropriate plasticity</li>
+                                    <li>No air pockets or lumps</li>
+                                </ul>
+                            </div>
+
+                            <div class="stage-video-section">
+                                <h3>Making Process</h3>
+                                <div class="stage-video-container">
+                                    <video controls poster="assets/videos/making-thumb.jpg">
+                                        <source src="assets/videos/making-process.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="video-caption">Watch the traditional paste-making techniques in action</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="stage4" class="production-stage">
+                        <h2>4. Quality Control and Finishing</h2>
+                        <div class="stage-content">
+                            <p class="stage-intro">Final inspection and preparation for distribution:</p>
+                            
+                            <div class="preparation-steps">
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="video-placeholder">Quality Testing</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Quality Assessment</h3>
+                                        <p>Comprehensive quality checks:</p>
+                                        <ul>
+                                            <li>Burn rate testing</li>
+                                            <li>Smoke quality evaluation</li>
+                                            <li>Physical inspection</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="prep-step">
+                                    <div class="step-media">
+                                        <div class="img-placeholder">Packaging Process</div>
+                                    </div>
+                                    <div class="step-content">
+                                        <h3>Final Packaging</h3>
+                                        <p>Preparation for distribution:</p>
+                                        <ul>
+                                            <li>Moisture-proof packaging</li>
+                                            <li>Label application</li>
+                                            <li>Storage preparation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quality-note">
+                                <h4>Final Verification</h4>
+                                <p>Each batch undergoes final checks:</p>
+                                <ul>
+                                    <li>Complete documentation review</li>
+                                    <li>Sample retention for quality control</li>
+                                    <li>Batch tracking system entry</li>
+                                </ul>
+                            </div>
+
+                            <div class="stage-video-section">
+                                <h3>Quality Control Process</h3>
+                                <div class="stage-video-container">
+                                    <video controls poster="assets/videos/quality-thumb.jpg">
+                                        <source src="assets/videos/quality-control.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <p class="video-caption">Detailed overview of our quality control procedures</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Educational resource about incense production and history</p>
+                <nav class="footer-nav">
+<div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="production.html">Production Process</a>
+                        <a href="types.html">Types of Incense</a>
+                        <a href="materials.html">Raw Materials</a>
+                        <a href="products.html">Products</a>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts/pageAnimations.js"></script>
+    <script src="scripts/production.js"></script>
+</body>
+</html>
