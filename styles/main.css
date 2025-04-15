@@ -234,6 +234,10 @@ main {
     background: linear-gradient(45deg, var(--color-light), transparent);
 }
 
+.hero img {
+    width: 5rem;
+}
+
 .hero::before {
     content: '';
     position: absolute;
@@ -502,12 +506,10 @@ section {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent 0%,
-        rgba(120, 109, 96, 0.1) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(45deg,
+            transparent 0%,
+            rgba(120, 109, 96, 0.1) 50%,
+            transparent 100%);
     transform: rotate(45deg);
     transition: all 0.6s ease;
 }
@@ -580,7 +582,7 @@ section {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
     }
-    
+
     .process-container article {
         padding: var(--space-lg);
         min-height: auto;
@@ -692,12 +694,10 @@ section {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent 0%,
-        rgba(120, 109, 96, 0.1) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(45deg,
+            transparent 0%,
+            rgba(120, 109, 96, 0.1) 50%,
+            transparent 100%);
     transform: rotate(45deg);
     transition: all 0.6s ease;
 }
@@ -770,7 +770,7 @@ section {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
     }
-    
+
     .process-container article {
         padding: var(--space-lg);
         min-height: auto;
@@ -790,12 +790,10 @@ section {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-        45deg,
-        transparent 0%,
-        rgba(120, 109, 96, 0.1) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(45deg,
+            transparent 0%,
+            rgba(120, 109, 96, 0.1) 50%,
+            transparent 100%);
     transform: rotate(45deg);
     transition: all 0.6s ease;
 }
@@ -868,7 +866,7 @@ section {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
     }
-    
+
     .process-container article {
         padding: var(--space-lg);
         min-height: auto;
@@ -1210,6 +1208,15 @@ footer {
     color: white;
     padding: var(--space-lg) var(--container-padding);
     margin-top: var(--space-xl);
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 30rem;
+    color: #fff;
 }
 
 .footer-content {
@@ -1227,6 +1234,7 @@ footer {
     margin-top: var(--space-sm);
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
 }
 
 .footer-links {
@@ -1240,6 +1248,7 @@ footer {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
+    z-index: 10;
 }
 
 .footer-nav a:hover {
@@ -1847,7 +1856,17 @@ footer {
     }
 }
 
-/* Types of Incense Enhanced Styles */
+/* Types of Incense Section */
+.typesOfIncense-section{
+    position: relative;
+}
+
+.typesOfIncense-section img{
+    position: absolute;
+    width: 20rem;
+    bottom: 0;
+}
+
 .types-container {
     max-width: min(var(--container-max), 90%);
     margin: 0 auto;
@@ -2176,6 +2195,35 @@ footer {
     padding-right: calc((100vw - var(--site-max-width)) / 2);
 }
 
+.history-section img {
+    position: absolute;
+    width: 5rem;
+    left: 15%;
+    top: 20%;
+    opacity: 0.5;
+    animation: historyImgAnimation 5s ease-in-out infinite;
+}
+
+.history-section img:nth-child(2) {
+    left: 82%;
+    top: 70%;
+    animation-delay: 1s;
+}
+
+@keyframes historyImgAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .history-bg {
     position: absolute;
     top: 0;
@@ -2301,6 +2349,41 @@ footer {
     padding-left: calc((100vw - var(--site-max-width)) / 2);
     padding-right: calc((100vw - var(--site-max-width)) / 2);
     background: linear-gradient(45deg, var(--color-light) 0%, transparent 100%);
+}
+
+.culture-section img {
+    position: absolute;
+    width: 5rem;
+    right: 33%;
+    top: 8%;
+    opacity: 0.5;
+    animation: cultureImgAnimation 5s ease-in-out infinite;
+}
+
+.culture-section img:nth-child(3) {
+    right: 60%;
+    top: 36%;
+    animation-delay: 2s;
+}
+
+.culture-section img:nth-child(4) {
+    left: 20%;
+    top: 75%;
+    animation-delay: 3s;
+}
+
+@keyframes cultureImgAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .culture-timeline {
